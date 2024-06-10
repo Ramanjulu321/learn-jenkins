@@ -29,6 +29,7 @@ pipeline {
                 sh 'echo this is deploy'
             }
         }
+        stahe ("print params"){
           steps{
                 echo "Hello ${params.PERSON}"
                 echo "Biography: ${params.BIOGRAPHY}"
@@ -36,5 +37,6 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
             }
+        }
     }
 }
